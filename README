@@ -1,0 +1,26 @@
+/*test machine: CSEL-LINDL102-32
+* date: 02/29/24
+* name: Sharmarke Ahmed, Bradley Johnson, John Van Sloun
+* x500: ahme0344, joh22202, vansl060
+*/
+
+Contributions:
+    Sharmarke Ahmed: cd.c, shell.c (implemented loadCommands() helper function, 
+    shellPrint() helper function, implemented shell execution for simple case 
+    (no redirection/piping), allowed wc.c to receive input from stdin when piping.
+    Bradley Johnson: wc.c, README, Some of shell.c, exit command for shell.c
+    John Van Sloun: ls.c, redirection and piping in shell.c
+
+Known Bugs: None
+
+Test Cases Used:
+- ls
+- wc test.txt
+- cd
+- ls > test.txt
+- ls | grep test.txt
+- ls | wc > test.txt
+- ls | grep cd > test.txt
+
+Special Instructions: In the folder containing the files, use ./cd, ./ls, or ./wc to run the commands.
+    Use ./shell to open the custom shell, where the implemented cd, ls, and wc can be used.
